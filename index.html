@@ -5,42 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vo Tam Nhu | Fashion Portfolio</title>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
-        /* Reset cơ bản */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: #f7f3ef; font-family: 'Inter', sans-serif; color: #222; overflow-x: hidden; scroll-behavior: smooth; }
-
-        /* Navigation */
         nav { position: fixed; top: 0; width: 100%; padding: 25px 60px; display: flex; justify-content: space-between; z-index: 999; background: rgba(247, 243, 239, 0.85); backdrop-filter: blur(10px); }
         .logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; }
         nav a { text-decoration: none; color: #222; margin-left: 25px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
-
-        /* Hero Section */
         .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
         .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 8vw; font-weight: 400; margin-bottom: 10px; }
         .hero p { font-size: 16px; letter-spacing: 6px; text-transform: uppercase; color: #666; }
-
-        /* Content Sections */
         .section { padding: 120px 8%; }
         .title { font-family: 'Cormorant Garamond', serif; font-size: 60px; margin-bottom: 40px; }
         .about { max-width: 800px; line-height: 1.8; font-size: 20px; font-weight: 300; }
-
-        /* Projects */
         .project { margin-bottom: 150px; }
         .project img { width: 100%; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.6s ease; }
         .project img:hover { transform: scale(1.01); }
         .project-title { font-family: 'Cormorant Garamond', serif; font-size: 50px; margin: 30px 0 15px; }
         .project-desc { max-width: 600px; line-height: 1.6; color: #555; }
-
-        /* Footer */
         .footer { padding: 100px 8%; text-align: center; border-top: 1px solid #ddd; }
         .footer h2 { font-family: 'Cormorant Garamond', serif; font-size: 40px; margin-bottom: 20px; }
-
-        /* Responsive */
         @media(max-width:768px){
             .hero h1 { font-size: 15vw; }
             .title { font-size: 40px; }
@@ -76,23 +62,35 @@
 <section id="projects" class="section">
     <h2 class="title">Projects</h2>
     
-    <!-- Bạn hãy thay tên file ảnh tương ứng vào src -->
     <div class="project">
-        <img src="1.png" alt="Crimson & Midnight">
+        <img src="1.jpg" alt="Project 1">
         <h3 class="project-title">Crimson & Midnight</h3>
-        <p class="project-desc">A dramatic exploration of contrast, passion and elegance. Inspired by rich crimson tones and dark romantic narratives.</p>
+        <p class="project-desc">A dramatic exploration of contrast, passion and elegance.</p>
     </div>
-
     <div class="project">
-        <img src="2.png" alt="The Dreamy Of Adventure">
+        <img src="2.jpg" alt="Project 2">
         <h3 class="project-title">The Dreamy Of Adventure</h3>
-        <p class="project-desc">A pastel fantasy inspired by freedom, dreams and delicate femininity.</p>
+        <p class="project-desc">A pastel fantasy inspired by freedom and delicate femininity.</p>
     </div>
-
     <div class="project">
-        <img src="3.png" alt="Melancholy">
+        <img src="3.jpg" alt="Project 3">
         <h3 class="project-title">Melancholy</h3>
-        <p class="project-desc">Golden-hour nostalgia translated into flowing silhouettes, warm textures and poetic femininity.</p>
+        <p class="project-desc">Golden-hour nostalgia translated into flowing silhouettes.</p>
+    </div>
+    <div class="project">
+        <img src="4.jpg" alt="Project 4">
+        <h3 class="project-title">Project 4</h3>
+        <p class="project-desc">Description for project 4.</p>
+    </div>
+    <div class="project">
+        <img src="5.jpg" alt="Project 5">
+        <h3 class="project-title">Project 5</h3>
+        <p class="project-desc">Description for project 5.</p>
+    </div>
+    <div class="project">
+        <img src="6.jpg" alt="Project 6">
+        <h3 class="project-title">Project 6</h3>
+        <p class="project-desc">Description for project 6.</p>
     </div>
 </section>
 
