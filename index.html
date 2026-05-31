@@ -1,248 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vo Tam Nhu | Fashion Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-<title>Vo Tam Nhu | Fashion Portfolio</title>
+    <style>
+        /* Reset cơ bản */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #f7f3ef; font-family: 'Inter', sans-serif; color: #222; overflow-x: hidden; scroll-behavior: smooth; }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; padding: 25px 60px; display: flex; justify-content: space-between; z-index: 999; background: rgba(247, 243, 239, 0.85); backdrop-filter: blur(10px); }
+        .logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; }
+        nav a { text-decoration: none; color: #222; margin-left: 25px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
 
-<style>
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 8vw; font-weight: 400; margin-bottom: 10px; }
+        .hero p { font-size: 16px; letter-spacing: 6px; text-transform: uppercase; color: #666; }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+        /* Content Sections */
+        .section { padding: 120px 8%; }
+        .title { font-family: 'Cormorant Garamond', serif; font-size: 60px; margin-bottom: 40px; }
+        .about { max-width: 800px; line-height: 1.8; font-size: 20px; font-weight: 300; }
 
-body{
-background:#f7f3ef;
-font-family:Inter,sans-serif;
-color:#222;
-overflow-x:hidden;
-}
+        /* Projects */
+        .project { margin-bottom: 150px; }
+        .project img { width: 100%; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.6s ease; }
+        .project img:hover { transform: scale(1.01); }
+        .project-title { font-family: 'Cormorant Garamond', serif; font-size: 50px; margin: 30px 0 15px; }
+        .project-desc { max-width: 600px; line-height: 1.6; color: #555; }
 
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:25px 60px;
-display:flex;
-justify-content:space-between;
-z-index:999;
-background:rgba(247,243,239,.85);
-backdrop-filter:blur(10px);
-}
+        /* Footer */
+        .footer { padding: 100px 8%; text-align: center; border-top: 1px solid #ddd; }
+        .footer h2 { font-family: 'Cormorant Garamond', serif; font-size: 40px; margin-bottom: 20px; }
 
-.logo{
-font-family:'Cormorant Garamond',serif;
-font-size:32px;
-}
-
-nav a{
-text-decoration:none;
-color:#222;
-margin-left:25px;
-}
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:8vw;
-font-weight:400;
-}
-
-.hero p{
-letter-spacing:6px;
-margin-top:15px;
-}
-
-.section{
-padding:120px 8%;
-}
-
-.title{
-font-family:'Cormorant Garamond',serif;
-font-size:70px;
-margin-bottom:40px;
-}
-
-.about{
-max-width:900px;
-line-height:1.9;
-font-size:18px;
-}
-
-.project{
-margin-bottom:150px;
-}
-
-.project img{
-width:100%;
-border-radius:10px;
-box-shadow:0 20px 50px rgba(0,0,0,.08);
-}
-
-.project-title{
-font-family:'Cormorant Garamond',serif;
-font-size:80px;
-margin:40px 0 20px;
-}
-
-.project-desc{
-max-width:700px;
-line-height:1.8;
-}
-
-.footer{
-padding:120px 40px;
-text-align:center;
-}
-
-.footer h2{
-font-family:'Cormorant Garamond',serif;
-font-size:60px;
-margin-bottom:20px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:70px;
-}
-
-.project-title{
-font-size:50px;
-}
-
-.title{
-font-size:50px;
-}
-
-nav{
-padding:20px;
-}
-
-}
-
-</style>
+        /* Responsive */
+        @media(max-width:768px){
+            .hero h1 { font-size: 15vw; }
+            .title { font-size: 40px; }
+            .project-title { font-size: 35px; }
+            nav { padding: 20px; }
+        }
+    </style>
 </head>
-
 <body>
 
 <nav>
-<div class="logo">Vo Tam Nhu</div>
-
-<div>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
+    <div class="logo">Vo Tam Nhu</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <section class="hero">
-
-<div>
-
-<h1>Fashion Portfolio</h1>
-
-<p>VO TAM NHU</p>
-
-</div>
-
+    <h1>VO TAM NHU</h1>
+    <p>Fashion Designer</p>
 </section>
 
 <section id="about" class="section">
-
-<h2 class="title">About</h2>
-
-<div class="about">
-
-Fashion designer focused on artistic storytelling,
-womenswear design and editorial aesthetics.
-My work explores emotion, color and movement through
-contemporary silhouettes and visual narratives.
-
-</div>
-
+    <h2 class="title">About</h2>
+    <div class="about">
+        Fashion designer focused on artistic storytelling, womenswear design and editorial aesthetics. 
+        My work explores emotion, color and movement through contemporary silhouettes and visual narratives.
+    </div>
 </section>
 
 <section id="projects" class="section">
+    <h2 class="title">Projects</h2>
+    
+    <!-- Bạn hãy thay tên file ảnh tương ứng vào src -->
+    <div class="project">
+        <img src="1.png" alt="Crimson & Midnight">
+        <h3 class="project-title">Crimson & Midnight</h3>
+        <p class="project-desc">A dramatic exploration of contrast, passion and elegance. Inspired by rich crimson tones and dark romantic narratives.</p>
+    </div>
 
-<h2 class="title">Projects</h2>
+    <div class="project">
+        <img src="2.png" alt="The Dreamy Of Adventure">
+        <h3 class="project-title">The Dreamy Of Adventure</h3>
+        <p class="project-desc">A pastel fantasy inspired by freedom, dreams and delicate femininity.</p>
+    </div>
 
-<div class="project">
-
-<img src="1.png">
-
-<h3 class="project-title">
-Crimson & Midnight
-</h3>
-
-<p class="project-desc">
-
-A dramatic exploration of contrast, passion and elegance.
-Inspired by rich crimson tones and dark romantic narratives.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<img src="2.png">
-
-<h3 class="project-title">
-The Dreamy Of Adventure
-</h3>
-
-<p class="project-desc">
-
-A pastel fantasy inspired by freedom,
-dreams and delicate femininity.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<img src="3.png">
-
-<h3 class="project-title">
-Melancholy
-</h3>
-
-<p class="project-desc">
-
-Golden-hour nostalgia translated into flowing silhouettes,
-warm textures and poetic femininity.
-
-</p>
-
-</div>
-
+    <div class="project">
+        <img src="3.png" alt="Melancholy">
+        <h3 class="project-title">Melancholy</h3>
+        <p class="project-desc">Golden-hour nostalgia translated into flowing silhouettes, warm textures and poetic femininity.</p>
+    </div>
 </section>
 
 <section id="contact" class="footer">
-
-<h2>Contact</h2>
-
-<p>Email: your@email.com</p>
-
-<p>Instagram: @yourinstagram</p>
-
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>Instagram: @yourinstagram</p>
 </section>
 
 </body>
